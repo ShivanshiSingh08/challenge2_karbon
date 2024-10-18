@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Analysis - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<body>
+    <div class="results-container">
+        <h1>Results</h1>
+        <div class="results-list">
+            {% for result in results %}
+                <div class="result-item">{{ result }}</div>
+            {% endfor %}
+        </div>
+        <a href="/">Upload another file</a>
+    </div>
+</body>
+</html>
